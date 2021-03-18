@@ -5,6 +5,8 @@ Catalyst testnet working.
 
 The `go-ethereum` repo is a submodule, don't forget to initialize it with `git submodule init && git submodule update`.
 
+The Lighthouse branch used with this code is at https://github.com/paulhauner/lighthouse/tree/merge-v0
+
 ## Scripts
 
 - [`./init_geth.sh`](./init_geth.sh): initialize Geth via a `genesis.json`
