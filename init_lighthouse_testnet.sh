@@ -30,7 +30,7 @@ $LCLI_BINARY \
 	--spec mainnet \
 	interop-genesis \
 	--testnet-dir $LH_TESTNET_DIR \
-	--application-block-hash $(sh rpc_genesis_root.sh) \
+	--application-block-hash $(cat eth1_genesis_hash.txt) \
 	$VALIDATOR_COUNT
 
 echo Created genesis state in $LH_TESTNET_DIR
