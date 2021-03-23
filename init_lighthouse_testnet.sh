@@ -10,6 +10,7 @@ $LCLI_BINARY \
 	new-testnet \
 	--deposit-contract-address 1234567890123456789012345678901234567890 \
 	--testnet-dir $LH_TESTNET_DIR \
+	--eth1-id 100020210316 \
 	--genesis-fork-version $GENESIS_FORK_VERSION \
 	--min-genesis-active-validator-count $VALIDATOR_COUNT \
 	--force
@@ -29,6 +30,7 @@ $LCLI_BINARY \
 	--spec mainnet \
 	interop-genesis \
 	--testnet-dir $LH_TESTNET_DIR \
+	--application-block-hash $(sh rpc_genesis_root.sh) \
 	$VALIDATOR_COUNT
 
 echo Created genesis state in $LH_TESTNET_DIR

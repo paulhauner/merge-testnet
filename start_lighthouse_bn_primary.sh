@@ -7,7 +7,7 @@ $LIGHTHOUSE_BINARY \
 	--datadir $LH_PRIMARY_BN_DATADIR \
 	--http \
 	--metrics \
-	--dummy-eth1 \
+	--eth1-endpoints "$GETH_LISTEN" \
 	--enr-address 127.0.0.1 \
 	--enr-udp-port 9000 \
 	--enr-tcp-port 9000 \

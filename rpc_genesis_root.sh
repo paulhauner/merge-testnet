@@ -6,4 +6,8 @@ curl \
 	POST \
 	-H "Content-Type: application/json" \
 	--data "$DATA" \
-	http://localhost:8545
+	http://localhost:8545 \
+	| \
+	jq -r '.result.hash' \
+	| \
+	cut -c 3-

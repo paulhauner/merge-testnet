@@ -5,6 +5,7 @@ $LIGHTHOUSE_BINARY \
 	--debug-level $LH_DEBUG_LEVEL \
 	bn \
 	--datadir $LH_SECONDARY_BN_DATADIR \
+	--eth1-endpoints $GETH_LISTEN \
 	--http \
 	--metrics \
 	--zero-ports
