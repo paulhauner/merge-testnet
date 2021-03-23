@@ -10,4 +10,6 @@ curl \
 	| \
 	jq -r '.result.hash' \
 	| \
-	cut -c 3-
+	cut -c 3- \
+	> \
+	eth1_genesis_hash.txt
