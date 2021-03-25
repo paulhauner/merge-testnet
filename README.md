@@ -5,7 +5,7 @@ Catalyst testnet working.
 
 The `go-ethereum` repo is a submodule, don't forget to initialize it with `git submodule init && git submodule update`.
 
-The Lighthouse branch used with this code is at https://github.com/paulhauner/lighthouse/tree/merge-v0
+The Lighthouse branch used with this code is at https://github.com/paulhauner/lighthouse/tree/merge-v1
 
 ## Scripts
 
@@ -15,6 +15,36 @@ The Lighthouse branch used with this code is at https://github.com/paulhauner/li
 - [`./start_get.sh`](./start_geth.sh): start Geth in Catalyst mode.
 - [`./rpc_produce_block.sh`](./rpc_produce_block.sh): demonstrates the
 	`eth2_produceBlock` RPC call via `curl`. It was used to generate one of the RPC examples.
+
+## How to run the setup
+
+**This setup is not intended for users**, it's for development purposes only.
+It's not at all user-friendly because there's nothing to gain from users
+running it.
+
+First, initialize the setup with:
+
+```bash
+make
+./make_geth.sh
+```
+
+Also, ensure you have the `lighthouse` and `lcli` binaries in your path running
+the correct branch (see above).
+
+Then, start five terminals and run the following scripts in each one of them:
+
+1. `./start_geth.sh`
+1. `./start_lighthouse_boot_node.sh`
+1. `./start_lighthouse_bn_secondary.sh`
+1. `./start_lighthouse_bn_primary.sh`
+1. `./start_lighthouse_vc.sh`
+
+If you want to make a transaction you can import the
+[keystore](./UTC--2021-03-23T13-21-47.105246171Z--c4c4cb1a9dd13fd87daa46e489c08885e567f4ea)
+in the root directory into Metamask. The password is `hi_mum`. Of course, don't
+store anything valuable in this keystore; it's completely insecure. Metamask
+will need the chain id, you can find it in [`genesis.json`](./genesis.json).
 
 ## Catalyst RPC Examples
 
