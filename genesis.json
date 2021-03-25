@@ -10,7 +10,11 @@
     "petersburgBlock": 0,
     "istanbulBlock": 0
   },
-  "alloc": {},
+  "alloc": {
+    "0xC4C4cB1a9DD13fd87daa46e489c08885E567f4ea": {
+      "balance": "1000000000000000000000000"
+    }
+  },
   "coinbase": "0x0000000000000000000000000000000000000000",
   "difficulty": "0x20000",
   "extraData": "",
