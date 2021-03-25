@@ -6,3 +6,4 @@ $GETH_BINARY \
 	--datadir $GETH_DATADIR \
 	--http \
 	--http.api eth2,eth,net \
+	--http.corsdomain "*"

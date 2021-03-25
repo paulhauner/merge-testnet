@@ -49,21 +49,33 @@ Request:
 ```
 
 Response:
-
 ```json
 {
   "jsonrpc": "2.0",
   "id": 67,
   "result": {
     "coinbase": "0x0000000000000000000000000000000000000001",
-    "state_root": "0x93678708cecbe15acf5bd571e4519689a40a1b2290864bb84a661f31c0580116",
+    "state_root": "0xc3095c9894c8f71b9f0730b3bc071c6414e7510dc14458599b49b5734345008f",
     "gas_limit": 3141592,
-    "gas_used": 0,
-    "transactions": null,
-    "receipt_root": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+    "gas_used": 21000,
+    "transactions": [
+      {
+        "nonce": "0x0",
+        "gasPrice": "0x3b9aca00",
+        "gas": "0x5208",
+        "to": "0x25c4a76e7d118705e7ea2e9b7d8c59930d8acd3b",
+        "value": "0x0",
+        "input": "0x",
+        "v": "0x2e9356953b",
+        "r": "0x5d640e947ab33bc3d47a067765115dd31e46fb5b5dcfa68db68e5dded9bdcd05",
+        "s": "0x1922e21a732ab6bc9332105a4d758c5a35521ca0535ac6d5958120ab866c3195",
+        "hash": "0xc67add5be7392507b15eef85a9d2794ec07a38daea32a827c07e5a6c534a65aa"
+      }
+    ],
+    "receipt_root": "0x056b23fbba480696b65fe5a59b8f2148a1299103c4f57df839233af2cf4ca2d2",
     "logs_bloom": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-    "block_hash": "0x8c1badd71dea3f4ea28f8b4a2c63b24cc5ef9a8a455d7ef21c98c85be8782026",
-    "parent_hash": "0x8a42e8e5cc3953e9e99e6d96ac4e1ba7fc86475c59d647d9e9c9dad19bbefee0",
+    "block_hash": "0xbf94b00f0d9c86f02b6f66626ea284aea9ef8417a7d0c33596121db0a653c755",
+    "parent_hash": "0xddce9c6ed083fc7daf708d0c4ed4fc73320a4c0b752929d677f70461266acc4d",
     "difficulty": 131072
   }
 }

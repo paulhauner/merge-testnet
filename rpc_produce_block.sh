@@ -7,7 +7,7 @@ ZERO_HASH="\"0x0000000000000000000000000000000000000000000000000000000000000000\
 # Note: you might have to get the root of the genesis block via
 # `./rpc_get_genesis_block.sh`. Presently there's a bug in Catalyst where the
 # handler will crash if you send the wrong root.
-PARENT_HASH='"0x8a42e8e5cc3953e9e99e6d96ac4e1ba7fc86475c59d647d9e9c9dad19bbefee0"'
+PARENT_HASH='"0xddce9c6ed083fc7daf708d0c4ed4fc73320a4c0b752929d677f70461266acc4d"'
 RANDAO_MIX=$ZERO_HASH
 # Note: the slot is *not* encoded as hex.
 SLOT=1
@@ -21,7 +21,7 @@ PARAMS="[{ \"parent_hash\": $PARENT_HASH, \"randao_mix\": $RANDAO_MIX, \"slot\":
 
 DATA="{\"jsonrpc\":\"2.0\",\"method\":\"eth2_produceBlock\",\"params\":$PARAMS,\"id\":67}"
 
-echo curl \
+curl \
 	-X \
 	POST \
 	-H "Content-Type: application/json" \
